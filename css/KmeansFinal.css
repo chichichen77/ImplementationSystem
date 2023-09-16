@@ -1,0 +1,112 @@
+#mainleft{
+	width:40%;
+	height:60vh;
+	float:left;
+	padding:5%;
+}
+#mainright{
+	width:40%;
+	height: 60vh;
+	float:left;
+	padding:5%;
+}
+#maindown{
+	width:100%;
+	height: 100px;
+	position:absolute;
+	bottom: 0px;
+	left: 0px;
+}
+table{
+	width:100%;
+}
+#maindown table tr td{
+	width: 20%;
+	text-align: center;
+}
+#mainleft table tr td{
+	width: 25%;
+	font-size: 23px;
+}
+#mainright table tr td{
+	width: 25%;
+	font-size: 23px;
+}
+html{
+	font-family:微軟正黑體;
+}
+.subtitle{
+	text-align: center;
+	font-size: 25px;
+	font-weight: bold;
+}
+button{
+	width: 60%;
+	font-size: 25px;
+	border-radius: 10px;
+	background-color: 	#FFFF6F	; 
+
+}
+body{
+	width: 100%;
+	height: 100vh;
+	margin: 0;
+	/*background: linear-gradient(-40deg,#99ccff,#99ccff);*/
+	background-image: url("../JPEG/Kmeans.jpeg");
+	background-size:cover ;
+	background-color:rgba(200,200,200,0.5); 
+	background-blend-mode: lighten;
+}
+hr{
+	border:0;
+	height: 2px;
+	background-image:linear-gradient(to right,#ccc,#333,#ccc); 
+}
+#goKmeans{
+	text-align: right;
+}
+.SendBtn {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    /*padding: 16px 32px;*/
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    /*font-size: 16px;
+    margin: 4px 2px;*/
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+/*.SendBtn {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+}
+
+.SendBtn:hover {
+    background-color: #4CAF50;
+    color: white;
+}*/
+
+.btnStyle{
+	font-size: 20px;
+	background-color: #FFFF6F;
+	
+	text-align: center;
+	cursor: pointer;
+	line-height: 25px;
+	border-radius: 12px;
+	color: #000;
+
+	border: 3px #B15BFF double;
+	transition: all .3s linear;
+}
+.btnStyle:hover{
+	font-weight:bold;
+	background-color: #CCFF80;
+	color: #FF0000;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}

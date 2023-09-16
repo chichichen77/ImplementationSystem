@@ -1,0 +1,92 @@
+body{
+	font-style: "微軟正黑體";
+	background-size: cover;
+	background-image: url("../JPEG/Castle.jpeg");
+	background-color:rgba(255,255,255,0.5); 
+	background-blend-mode: lighten;
+	/*height: 100%;
+  margin: 0;*/
+}
+td{
+	border: 0.5rem #FF9797 groove;
+	width:  18rem;
+	height: 5rem;
+}
+#choicetable{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 90vh;
+	width: 45vw;
+	float: left;
+}
+#confirmAndPep{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 90vh;
+	width: 50vw;
+	float: right;
+}
+#btnPalce{
+	height: 50px;
+	text-align: center;
+}
+
+#confirmAndPep td{
+	border: none;
+}
+h5{
+	font-size: 1.3rem;
+	line-height: 0.5rem;
+}
+.theform{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.theform select,input{
+	font-size: 1rem;
+}
+.theform input{
+	width:40%;
+}
+#confirmbtn{
+	width: 12rem;
+	height: 3rem;
+	font-size: 1.3rem;
+	background-color: #FFECEC;
+	border-radius: 12px;
+	border: 3px #FFAAD5 double;
+}
+#finalanswer{
+	background-color: #93FF93;
+	font-size: 3.5rem;
+	text-align: center; 
+}
+
+
+
+#goWeka{
+	text-align: right;
+}
+
+
+.btnStyle{
+	/*padding-bottom: 50px;*/
+	font-size: 18px;
+	font-weight:bold;
+	text-align: center;
+	cursor: pointer;
+	line-height: 25px;
+	color: #000;
+	background-color: #97CBFF;
+	border: 3px blue dashed;
+	transition: all .3s linear;
+}
+.btnStyle:hover{
+	background-color: #FFFFAA	;
+	color: #FF0000;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
