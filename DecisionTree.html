@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>決策樹</title>
+	<link rel="stylesheet" type="text/css" href="css/DecisionTree.css">
+	<script type="text/javascript" src="javascript/DecisionTree.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+	<div id="goWeka">
+		<a href="DecisionTreeJPEG.html">WEKA決策樹圖</a>
+	</div>
+	<div id="choicetable">
+		<table>
+
+			<tr>
+				<td>
+					<div class="theform">
+						<h5>age :&nbsp&nbsp</h5>
+						<input type="text" id="agetext">
+					</div>
+				</td>
+				<td>
+					<div class="theform">
+						<h5>sex :&nbsp&nbsp</h5>
+						<select id="sexselect">
+							<option value="MALE">male</option>
+							<option value="FEMALE">female</option>
+						</select>
+					</div>				
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<div class="theform">
+						<h5>education:&nbsp&nbsp</h5>
+						<select id="educationselect">
+							<option value="Before-Senior-High">Before-Senior-High</option>
+							<option value="Bachelors">Bachelors</option>
+							<option value="Masters">Masters</option>
+							<option value="Doctorate">Doctorate</option>
+						</select>
+					</div>
+				</td>
+				<td>
+					<div class="theform">
+						<h5>marital :&nbsp&nbsp</h5>
+						<select id="maritalselect">
+							<option value="Married">Married</option>
+							<option value="Divorced">Divorced</option>
+							<option value="Separated">Separated</option>
+						</select>
+					</div>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<div class="theform">
+						<h5>children :&nbsp&nbsp</h5>
+						<select id="childrenselect">
+							<option value="zero">0</option>
+							<option value="one">1</option>
+							<option value="two">2</option>
+						</select>
+					</div>
+				</td>
+				<td>
+					<div class="theform">
+						<h5>workclass :&nbsp&nbsp</h5>
+						<select id="workclassselect">
+							<option value="Government">Government</option>
+							<option value="Private">Private</option>
+						</select>
+					</div>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<div class="theform">
+						<h5>race :&nbsp&nbsp</h5>
+						<select id="raceselect">
+							<option value="White">White</option>
+							<option value="Black">Black</option>
+							<option value="Asian">Asian</option>
+							<option value="Other">Other</option>
+						</select>
+					</div>
+				</td>
+				<td>
+					<div class="theform">
+						<h5>workhours :&nbsp&nbsp</h5>
+						<input type="text" id="workhourstext">
+					</div>
+				</td>
+			</tr>
+		</table>
+	</div>
+
+
+	<div id="confirmAndPep">
+		<table>
+			<tr>
+				<td>
+					<button id="confirmbtn" class="btnStyle" onclick="confirm()">confirm and send</button>
+				</td>
+				<td>
+					<h5>Predicted Income</h5>
+				</td>
+				<td id="finalanswer"></td>
+			</tr>
+		</table>
+	</div>
+
+	<div id="btnPalce">
+		<button class="btnStyle" onclick="gohome()">回主頁</button>
+		&nbsp&nbsp
+		<button class="btnStyle" onclick="clearResult()" >清除</button>
+		&nbsp&nbsp
+		<button class="btnStyle" onclick="toKmeans()" >Kmeans</button>
+		<br>
+	</div>
+</body>
+</html>

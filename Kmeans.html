@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/KmeansFinal.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script type="text/javascript" src="javascript/Kmeans00.js"></script>
+	<title>Kmeans</title>
+</head>
+<body>
+	<div id="goKmeans">
+		<br>
+		<a href="main.html">回主頁面</a>
+		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		<a href="KmeansJPEG.html">分群結果</a>
+		&nbsp&nbsp&nbsp
+		<br>
+		&nbsp&nbsp
+		<a href="KmeansCaJPEG.html">交叉分析結果</a>
+		&nbsp&nbsp&nbsp
+		
+	</div>
+	<div id="mainleft">
+		<p clas="subtitle">變數輸入</p>
+		<hr>
+		<div>
+			<table>
+				<tr>
+					<td>age</td>
+					<td><input type="text" id="agetext"></td>
+					<td>sex</td>
+					<td>
+						<select id="sexselect">
+							<option value="MALE">male</option>
+							<option value="FEMALE">female</option>
+						</select>
+					</td>
+				</tr>
+
+				<tr>
+					<td>education</td>
+					<td>
+						<select id="educationselect">
+							<option value="Before-Senior-High">Before-Senior-High</option>
+							<option value="Bachelors">Bachelors</option>
+							<option value="Masters">Masters</option>
+							<option value="Doctorate">Doctorate</option>
+						</select>
+					</td>
+					<td>marital</td>
+					<td>
+						<select id="maritalselect">
+							<option value="Married">Married</option>
+							<option value="Divorced">Divorced</option>
+							<option value="Separated">Separated</option>
+						</select>
+					</td>
+				</tr>
+
+				<tr>
+					<td>children</td>
+					<td>
+						<select id="childrenselect">
+							<option value="zero">0</option>
+							<option value="one">1</option>
+							<option value="two">2</option>
+						</select>
+					</td>
+					<td>workclass</td>
+					<td>
+						<select id="workclassselect">
+							<option value="Government">Government</option>
+							<option value="Private">Private</option>
+						</select>
+					</td>
+				</tr>
+
+				<tr>
+					<td>race</td>
+					<td>
+						<select id="raceselect">
+							<option value="White">White</option>
+							<option value="Black">Black</option>
+							<option value="Asian">Asian</option>
+							<option value="Other">Other</option>
+						</select>
+					</td>
+					<td>workhours</td>
+					<td>
+						<input type="text" id="workhourstext">
+					</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+	<div id="mainright">
+		<p clas="subtitle">kmeans</p>
+		<hr>
+		<table>
+			<tr>
+				<td>資料群集:</td>
+				<td id="nowcluster"></td>
+				<td>是否會買:</td>
+				<td id="nowkmeanspep"></td>
+			</tr>
+		</table>
+
+		<p clas="subtitle">knn</p>
+		<hr>
+		<table>
+			<tr>
+				<td>knn id:</td>
+				<td id="nowknnid"></td>
+				<td>knn Income:</td>
+				<td id="nowknnpep"></td>
+			</tr>
+		</table>
+
+		<p clas="subtitle">交叉分析</p>
+		<hr>
+		<table>
+			<tr>
+				<td>分析結果:</td>
+				<td id="nowcafinal"></td>
+		
+			</tr>
+		</table>
+	</div>
+	<div id="maindown">
+		<table>
+			<tr>
+				<td><button class="btnStyle" id="CountBtn" onclick="kmeans()">計算</button></td>
+				<td><button class="btnStyle" id="KNNBtn" onclick="knn()">KNN</button></td>
+				<td><button class="btnStyle" id="CrossAnaBtn" onclick="crossanalysis()">交叉分析</button></td>
+				<td><button class="btnStyle" id="SendBtn" onclick="sendresult()" >送出</button></td>
+				<td><button class="btnStyle" id="CleanDataBtn" onclick="emptyinput()">清除資料</button></td>
+			</tr>
+		</table>
+	</div>
+
+</body>
+</html>
